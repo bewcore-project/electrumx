@@ -31,8 +31,8 @@ classifiers = [
 dynamic = ['version']
 
 [project.urls]
-Homepage = "https://github.com/spesmilo/electrumx"
-Repository = "https://github.com/spesmilo/electrumx"
+Homepage = "https://github.com/bewcore-project/electrumx"
+Repository = "https://github.com/bewcore-project/electrumx"
 
 [project.scripts]
 electrumx_server = "electrumx.cli.electrumx_server:main"
@@ -67,3 +67,4 @@ tribushashm = ["tribushashm>=1.0.5", ]
 xevan-hash = ["xevan-hash", ]
 dash_hash = ["dash_hash>=1.4", ]
 zny-yespower-0-5 = ["zny-yespower-0-5", ]
+bitweb_yespower = ["bitweb_yespower==1.0.5", ]
