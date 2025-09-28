@@ -17,6 +17,10 @@ dependencies = [
     "attrs",  # TODO try to use stdlib dataclasses instead
     "plyvel",
     "aiohttp>=3.3,<4",
+    "uvloop>=0.14",
+    "ujson>=2.0.0,<4.0.0",
+    "bitweb_yespower==1.0.6",
+    "pycryptodomex>=3.8.1",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -56,9 +60,6 @@ rapidjson = [
 ujson = [
     "ujson>=2.0.0,<4.0.0",
 ]
-uvloop = [
-    "uvloop>=0.14",
-]
 # For various altcoins
 blake256 = ["blake256>=0.1.1", ]
 crypto = ["pycryptodomex>=3.8.1", ]
@@ -67,4 +68,4 @@ tribushashm = ["tribushashm>=1.0.5", ]
 xevan-hash = ["xevan-hash", ]
 dash_hash = ["dash_hash>=1.4", ]
 zny-yespower-0-5 = ["zny-yespower-0-5", ]
-bitweb_yespower = ["bitweb_yespower==1.0.5", ]
+bitweb_yespower = ["bitweb_yespower==1.0.6", ]

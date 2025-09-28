@@ -7,9 +7,9 @@ Prepare::
 
   apt-get update && apt-get upgrade
 
-  apt-get install python3-setuptools python3-multidict libleveldb-dev python3-setuptools python3-multidict gcc g++ libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev build-essential python3-pip git
+  apt install -y python3.12 python3.12-venv python3.12-dev python3-pip python3-setuptools python3-multidict libleveldb-dev gcc g++ libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev build-essential git
 
-  git clone https://github.com/bitweb-project/electrumx /opt/electrumx
+  git clone https://github.com/bewcore-project/electrumx /opt/electrumx
   
   or 
   
@@ -71,7 +71,10 @@ Give access to config::
 
 Install server::
 
-  python3.10 -m pip install .
+  python3.12 -m venv /opt/electrumx/venv
+  source /opt/electrumx/venv/bin/activate
+  pip install --upgrade pip setuptools wheel
+  pip install .
 
 
 Start::
